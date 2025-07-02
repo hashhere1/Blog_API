@@ -1,7 +1,7 @@
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
 import models
-from hashing import hashing
+from auth.hashing import hashing
 
 
 def create(request, db: Session):
